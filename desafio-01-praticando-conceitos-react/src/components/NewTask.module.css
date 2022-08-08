@@ -1,5 +1,10 @@
+.newtask {
+    display: flex;
+}
+
 .newtask input {
     background: var(--gray-500);
+    color: var(--gray-300);
     border-radius: 8px;
     width: 39.875rem;
     height: 3.375rem;
@@ -8,20 +13,32 @@
     padding: 1rem;
 }
 
+.newtask input::placeholder {
+    color: var(--gray-300);
+}
+
 .newtask button {
     background: var(--blue-dark);
     height: 3.25rem;
     width: 5.625rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+
     color: var(--gray-100);
+    font-weight: bold;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: 0.2s;
+    
 }
 
 .newtask button span {
     font-size: 0.875rem;
-    margin-right: 0.3rem;
+    margin-right: 0.4rem;
 
 }
 

@@ -1,0 +1,81 @@
+.task {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    background: var(--gray-400);
+
+    height: 4.5rem;
+    border: 1px solid var(--gray-500);
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--gray-100);
+}
+
+.taskComplete {
+    background: transparent;
+    border: none;
+    margin-left: 1rem;
+
+    display: flex;
+    align-items: center;
+    
+    text-decoration: line-through;
+    color: var(--gray-300);
+
+}
+
+.taskComplete > button{
+    background: transparent;
+    border: none;
+    color: var(--purple-dark);
+    margin-right: 1rem;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.taskComplete > button:hover{
+    color: var(--purple);
+}
+
+.taskIncomplete {
+    background: transparent;
+    border: none;
+    margin-left: 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.taskIncomplete > button {
+    background: transparent;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: var(--blue);
+    transition: 0.1s;
+}
+
+.taskIncomplete > button:hover{
+    color: var(--blue-dark);
+}
+
+.trash {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem;
+    color: var(--gray-300);
+}
+
+.trash img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.trash:hover{
+    color: var(--danger);
+    background: var(--gray-400)
+}

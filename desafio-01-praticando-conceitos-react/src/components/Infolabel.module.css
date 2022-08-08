@@ -1,0 +1,26 @@
+.label {
+    display: flex;
+    
+}
+
+.labelCreated {
+    background: transparent;
+    color: var(--blue);
+    margin-right: 3px;
+}
+.labelConcluded {
+    background: transparent;
+    color: var(--purple);
+    margin-right: 3px;
+}
+
+.number {
+    width: 1.5625rem;
+    height: 1.1875rem;
+    background: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
