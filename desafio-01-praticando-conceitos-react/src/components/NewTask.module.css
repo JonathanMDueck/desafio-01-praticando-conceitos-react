@@ -1,4 +1,4 @@
-.newtask {
+.newtask form {
     display: flex;
 }
 
@@ -34,6 +34,11 @@
     cursor: pointer;
     transition: 0.2s;
     
+}
+
+.newtask button:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
 }
 
 .newtask button span {

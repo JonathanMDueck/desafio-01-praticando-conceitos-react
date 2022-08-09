@@ -24,7 +24,7 @@ export function Task({ isComplete, description, onCompleteTask, onDeleteTask }: 
 
     return(
         <div className={styles.task}>
-            <div className={isComplete ? styles.taskComplete : styles.taskIncomplete}> 
+            <div className={isComplete ? styles.taskComplete : styles.taskIncomplete}>
                 <button onClick={handleCompleteTask}>
                     {isComplete ? <CheckCircle size={24} weight='fill'/> : <Circle size={24}/>}
                 </button>
