@@ -1,7 +1,7 @@
 .task {
     display: flex;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
     background: var(--gray-400);
 
     height: 4.5rem;
@@ -9,6 +9,7 @@
     border-radius: 8px;
     font-size: 0.875rem;
     color: var(--gray-100);
+    left: 1rem;
 }
 
 .taskComplete {
@@ -24,7 +25,7 @@
 
 }
 
-.taskComplete > button{
+.taskComplete > button:first-child{
     background: transparent;
     border: none;
     color: var(--purple-dark);
@@ -33,7 +34,7 @@
     cursor: pointer;
 }
 
-.taskComplete > button:hover{
+.taskComplete > button:first-child:hover{
     color: var(--purple);
 }
 
@@ -46,7 +47,7 @@
     align-items: center;
 }
 
-.taskIncomplete > button {
+.taskIncomplete > button:first-child {
     background: transparent;
     border: none;
     margin-right: 1rem;
@@ -55,7 +56,7 @@
     transition: 0.1s;
 }
 
-.taskIncomplete > button:hover{
+.taskIncomplete > button:first-child:hover{
     color: var(--blue-dark);
 }
 
@@ -68,11 +69,13 @@
     height: 1.5rem;
     margin: 1rem;
     color: var(--gray-300);
+    transition: 0.2s;
 }
 
 .trash img {
     width: 1.5rem;
     height: 1.5rem;
+    transition: 0.2s;
 }
 
 .trash:hover{
