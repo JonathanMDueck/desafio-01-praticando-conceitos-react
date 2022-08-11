@@ -32,11 +32,12 @@ export default function App() {
         t.isComplete = !t.isComplete;
       }
     })
-    updateTasksCompleted();
+    updateTasksCompleted(tasks);
   }
   
-  function updateTasksCompleted(){
-    const list = tasks.filter(task => {
+  function updateTasksCompleted(taskList: TaskProps[]){
+    
+    const list = taskList.filter(task => {
       return task.isComplete;
     })
     setTasksCompleted(list.length);
@@ -46,10 +47,9 @@ export default function App() {
     const tasksWithoutDeletedOne = tasks.filter(task => {
       return task.description !== taskToDelete;
     })
-
     setTasks(tasksWithoutDeletedOne);
     setTasksCreated(tasksCreated - 1);
-    updateTasksCompleted()
+    updateTasksCompleted(tasksWithoutDeletedOne);
   }
 
   return (
