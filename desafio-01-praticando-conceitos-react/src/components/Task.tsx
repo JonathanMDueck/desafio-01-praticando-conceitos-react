@@ -14,23 +14,25 @@ interface TaskProps {
 export function Task({ isComplete, description, onCompleteTask, onDeleteTask }: TaskProps) {
 
 
-    function handleCompleteTask(){
+    function handleCompleteTask() {
         onCompleteTask(description);
     }
 
-    function handleDeleteTask(){
+    function handleDeleteTask() {
         onDeleteTask(description);
     }
 
-    return(
+    return (
         <div className={styles.task}>
-            <div className={isComplete ? styles.taskComplete : styles.taskIncomplete}>
-                <button onClick={handleCompleteTask}>
-                    {isComplete ? <CheckCircle size={24} weight='fill'/> : <Circle size={24}/>}
-                </button>
-                <p>{description}</p>
+            <div className={styles.taskContent}>
+                <div className={isComplete ? styles.taskComplete : styles.taskIncomplete}>
+                    <button onClick={handleCompleteTask}>
+                        {isComplete ? <CheckCircle size={24} weight='fill' /> : <Circle size={24} />}
+                    </button>
+                    <p>{description}</p>
+                </div>
                 <button className={styles.trash} onClick={handleDeleteTask}>
-                    <Trash/>
+                    <Trash />
                 </button>
             </div>
         </div>

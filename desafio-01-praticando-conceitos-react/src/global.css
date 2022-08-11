@@ -20,6 +20,11 @@
     box-shadow: 0 0 0 2px var(--purple-dark);
 }
 
+button:focus {
+    outline: transparent;
+    box-shadow: none;
+}
+
 * {
     margin: 0;
     padding: 0;
